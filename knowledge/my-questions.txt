@@ -1,0 +1,29 @@
+i got this visualization:
+will the ML work properly on  this blur images?? since i which i dowloaded was blur too 
+
+Yes. This is correct. Nothing is wrong.
+These are not blurred because of download issue.
+CIFAR-10 images are:
+32 × 32 pixels
+Very low resolution
+Naturally look pixelated / blurry when enlarged
+You are visualizing tiny images on a larger canvas — that’s why they look blurry.
+Important Understanding
+CNN does not see blur the way humans do.
+It sees:
+Pixel intensity patterns
+Edges
+Color gradients
+Local spatial structures
+Even at 32×32, there is enough information for classification.
+
+
+
+
+
+Important rule in ML:
+
+Always build a simple working baseline first.
+Then improve systematically.
+
+If you start adding everything now, you won’t know what actually helped.
